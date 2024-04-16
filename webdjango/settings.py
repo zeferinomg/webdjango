@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-9dld^l)q^0sef$skuygqysmdj3-w1bw$^+%7@+8dl-+v)tku7@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '192.168.0.129', '127.0.0.1']
+ALLOWED_HOSTS = ['obliging-lemur-absolutely.ngrok-free.app','localhost', '127.0.0.1']
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
+    #'webdjango.middleware.NgrokMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -131,6 +132,13 @@ CORS_ALLOWED_ORIGINS = [
     'http://192.168.0.47',
     'http://192.168.0.0',
     'http://192.168.0.1',
+]
+
+CORS_ALLOW_HEADERS = [
+    'ngrok-skip-brower-warning',
+    'access-control-allow-origin',
+    'access-control-allow-credentials',
+    'content-type',
 ]
 
 CORS_ALLOW_CREDENTIALS = True
