@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-9dld^l)q^0sef$skuygqysmdj3-w1bw$^+%7@+8dl-+v)tku7@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['obliging-lemur-absolutely.ngrok-free.app','localhost', '127.0.0.1']
 
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'helloworld',
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -128,10 +129,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost',
-    'http://localhost:80',
-    'http://192.168.0.47',
-    'http://192.168.0.0',
-    'http://192.168.0.1',
+    'https://vga-labs.com'
 ]
 
 CORS_ALLOW_HEADERS = [
