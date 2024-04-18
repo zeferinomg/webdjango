@@ -129,7 +129,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost',
-    'https://vga-labs.com'
+    'https://vga-labs.com',
+    'http://localhost:5173',
 ]
 
 CORS_ALLOW_HEADERS = [
