@@ -131,6 +131,8 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost',
     'https://vga-labs.com',
     'http://localhost:5173',
+    'http://192.168.0.47',
+    'http://192.168.0.47:5173',
 ]
 
 CORS_ALLOW_HEADERS = [
