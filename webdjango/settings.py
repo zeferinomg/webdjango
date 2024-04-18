@@ -54,6 +54,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+APPEND_SLASH = True
+
 ROOT_URLCONF = 'webdjango.urls'
 
 TEMPLATES = [
@@ -128,15 +130,15 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost',
-    'https://vga-labs.com',
-    'http://localhost:5173',
-    'http://192.168.0.47',
-    'http://192.168.0.47:5173',
+    "https://vga-labs.com",
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "http://192.168.0.47",
+    "http://192.168.0.47:5173",
 ]
 
 CORS_ALLOW_HEADERS = [
-    'ngrok-skip-brower-warning',
+    'ngrok-skip-browser-warning',
     'access-control-allow-origin',
     'access-control-allow-credentials',
     'content-type',
